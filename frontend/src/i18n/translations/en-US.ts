@@ -5,11 +5,11 @@ export default {
   "navbar.home": "Home",
   "navbar.signup": "Sign Up",
 
-  "navbar.links.shares": "My shares",
-  "navbar.links.reverse": "Reverse shares",
+  "navbar.links.shares": "Shares",
+  "navbar.links.reverse": "Reverse Shares",
 
   "navbar.avatar.account": "My account",
-  "navbar.avatar.admin": "Administration",
+  "navbar.avatar.admin": "Settings",
   "navbar.avatar.signout": "Sign out",
   // END navbar
 
@@ -19,7 +19,7 @@ export default {
   "home.description":
     "Do you really want to give your personal files in the hand of third parties like WeTransfer?",
   "home.bullet.a.name": "Self-Hosted",
-  "home.bullet.a.description": "Host Pingvin Share on your own machine.",
+  "home.bullet.a.description": "Host Kumo on your own machine.",
   "home.bullet.b.name": "Privacy",
   "home.bullet.b.description":
     "Your files are your files and should never get into the hands of third parties.",
@@ -32,7 +32,7 @@ export default {
   // END /
 
   // /auth/signin
-  "signin.title": "Welcome back",
+  "signin.title": "Sign in (private)",
   "signin.description": "You don't have an account yet?",
   "signin.button.signup": "Sign up",
   "signin.input.email-or-username": "Email or username",
@@ -145,10 +145,10 @@ export default {
   // END /account
 
   // /account/shares
-  "account.shares.title": "My shares",
-  "account.shares.title.empty": "It's empty here 👀",
-  "account.shares.description.empty": "You don't have any shares.",
-  "account.shares.button.create": "Create one",
+  "account.shares.title": "Shares",
+  "account.shares.title.empty": "Empty 🙁",
+  "account.shares.description.empty": "Upload something!",
+  "account.shares.button.create": "Click here",
 
   "account.shares.info.title": "Share informations",
   "account.shares.table.id": "ID",
@@ -160,7 +160,7 @@ export default {
   "account.shares.table.size": "Size",
 
   "account.shares.modal.share-informations": "Share informations",
-  "account.shares.modal.share-link": "Share link",
+  "account.shares.modal.share-link": "Share kumolink",
 
   "account.shares.modal.delete.title": "Delete share {share}",
   "account.shares.modal.delete.description":
@@ -169,13 +169,13 @@ export default {
   // END /account/shares
 
   // /account/reverseShares
-  "account.reverseShares.title": "Reverse shares",
+  "account.reverseShares.title": "Reverse Shares",
   "account.reverseShares.description":
-    "A reverse share allows you to generate a unique URL that allows external users to create a share.",
+    "A reverse share allows you to generate a unique kumolink that allows external users to create a share.",
 
-  "account.reverseShares.title.empty": "It's empty here 👀",
+  "account.reverseShares.title.empty": "Empty 🙁",
   "account.reverseShares.description.empty":
-    "You don't have any reverse shares.",
+    "No reverse shares.",
 
   // showCreateReverseShareModal.tsx
   "account.reverseShares.modal.title": "Create reverse share",
@@ -197,19 +197,19 @@ export default {
 
   "account.reverseShares.modal.send-email": "Send email notification",
   "account.reverseShares.modal.send-email.description":
-    "Send an email notification when a share is created with this reverse share link.",
+    "Send an email notification when a share is created with this reverse share kumolink.",
 
   "account.reverseShares.modal.simplified": "Simple mode",
   "account.reverseShares.modal.simplified.description":
-    "Make it easy for the person uploading the file to share it with you. They will be able to customize only the name and description of the share.",
+    "Only allow changing the name and description.",
 
   "account.reverseShares.modal.public-access": "Public access",
   "account.reverseShares.modal.public-access.description":
-    "Make the created shares with this reverse share public. If disabled, only you and the creator of the share can view it.",
+    "If disabled, only you and the creator can view the share.",
 
   "account.reverseShares.modal.max-use.label": "Max uses",
   "account.reverseShares.modal.max-use.description":
-    "The maximum amount of times this URL can be used to create a share.",
+    "How many times this kumolink can be used to make a share.",
   "account.reverseShare.never-expires": "This reverse share will never expire.",
   "account.reverseShare.expires-on":
     "This reverse share will expire on {expiration}.",
@@ -222,7 +222,7 @@ export default {
   "account.reverseShares.table.max-size": "Max share size",
   "account.reverseShares.table.expires": "Expires at",
 
-  "account.reverseShares.modal.reverse-share-link": "Reverse share link",
+  "account.reverseShares.modal.reverse-share-link": "Reverse share kumolink",
 
   "account.reverseShares.modal.delete.title": "Delete reverse share",
   "account.reverseShares.modal.delete.description":
@@ -231,10 +231,10 @@ export default {
   // END /account/reverseShares
 
   // /admin
-  "admin.title": "Administration",
-  "admin.button.users": "User management",
-  "admin.button.shares": "Share management",
-  "admin.button.config": "Configuration",
+  "admin.title": "Settings",
+  "admin.button.users": "Users",
+  "admin.button.shares": "Shares",
+  "admin.button.config": "Config",
   "admin.version": "Version",
   // END /admin
 
@@ -291,11 +291,11 @@ export default {
   "upload.notify.count-failed": "{count} files failed to upload. Trying again.",
 
   // Dropzone.tsx
-  "upload.dropzone.title": "Upload files",
+  "upload.dropzone.title": "Upload",
   "upload.dropzone.description":
-    "Drag'n'drop files here to start your share. We can accept only files that are less than {maxSize} in total.",
+    "Drop here! Total size up to {maxSize}.",
   "upload.dropzone.notify.file-too-big":
-    "Your files exceed the maximum share size of {maxSize}.",
+    "Over {maxSize}.",
 
   // FileList.tsx
   "upload.filelist.name": "Name",
@@ -305,7 +305,7 @@ export default {
   "upload.modal.title": "Create Share",
   "upload.modal.link.error.invalid":
     "Can only contain letters, numbers, underscores, and hyphens",
-  "upload.modal.link.error.taken": "This link is already in use",
+  "upload.modal.link.error.taken": "Kumolink in use!",
   "upload.modal.not-signed-in": "You're not signed in",
   "upload.modal.not-signed-in-description":
     "You will be unable to delete your share manually and view the visitor count.",
@@ -315,7 +315,7 @@ export default {
   "upload.modal.expires.error.too-long":
     "Expiration exceeds maximum expiration date of {max}.",
 
-  "upload.modal.link.label": "Link",
+  "upload.modal.link.label": "Kumolink",
   "upload.modal.expires.label": "Expiration",
   "upload.modal.expires.minute-singular": "Minute",
   "upload.modal.expires.minute-plural": "Minutes",
@@ -330,10 +330,10 @@ export default {
   "upload.modal.expires.year-singular": "Year",
   "upload.modal.expires.year-plural": "Years",
 
-  "upload.modal.accordion.name-and-description.title": "Name and description",
+  "upload.modal.accordion.name-and-description.title": "Details",
   "upload.modal.accordion.name-and-description.name.placeholder": "Name",
   "upload.modal.accordion.name-and-description.description.placeholder":
-    "Note for the recipients of this share",
+    "Add a note",
 
   "upload.modal.accordion.email.title": "Email recipients",
   "upload.modal.accordion.email.placeholder": "Enter email recipients",
@@ -350,7 +350,7 @@ export default {
   "upload.modal.completed.expires-on":
     "This share will expire on {expiration}.",
   "upload.modal.completed.share-ready": "Share ready",
-  "upload.modal.completed.notified-reverse-share-creator": "We have notified the creator of the reverse share. You can also manually share this link with them through other means.",
+  "upload.modal.completed.notified-reverse-share-creator": "We have notified the creator of the reverse share. You can also manually share this kumolink with them through other means.",
 
   // END /upload
 
@@ -367,9 +367,9 @@ export default {
   "share.error.access-denied.title": "Private share",
   "share.error.access-denied.description": "The current account does not have permission to access this share",
 
-  "share.modal.password.title": "Password required",
+  "share.modal.password.title": "Locked!",
   "share.modal.password.description":
-    "To access this share please enter the password for the share.",
+    "To access, please enter password.",
   "share.modal.password": "Password",
   "share.modal.error.invalid-password": "Invalid password",
 
@@ -377,7 +377,7 @@ export default {
   "share.notify.download-all-preparing":
     "The share is preparing. Try again in a few minutes.",
 
-  "share.modal.file-link": "File link",
+  "share.modal.file-link": "File kumolink",
   "share.table.name": "Name",
   "share.table.size": "Size",
 
@@ -407,7 +407,7 @@ export default {
   "admin.config.general.app-name.description": "Name of the application",
   "admin.config.general.app-url": "App URL",
   "admin.config.general.app-url.description":
-    "On which URL Pingvin Share is available",
+    "On which URL Kumo is available",
   "admin.config.general.show-home-page": "Show home page",
   "admin.config.general.show-home-page.description":
     "Whether to show the home page",
@@ -431,10 +431,10 @@ export default {
     "Message which gets sent to the share recipients. Available variables:\n {creator} - The username of the creator of the share\n {shareUrl} - The URL of the share\n {desc} - The description of the share\n {expires} - The expiration date of the share\n The variables will be replaced with the actual value.",
   "admin.config.email.reverse-share-subject": "Reverse share subject",
   "admin.config.email.reverse-share-subject.description":
-    "Subject of the email which gets sent when someone created a share with your reverse share link.",
+    "Subject of the email which gets sent when someone created a share with your reverse share kumolink.",
   "admin.config.email.reverse-share-message": "Reverse share message",
   "admin.config.email.reverse-share-message.description":
-    "Message which gets sent when someone created a share with your reverse share link. {shareUrl} will be replaced with the creator's name and the share URL.",
+    "Message which gets sent when someone created a share with your reverse share kumolink. {shareUrl} will be replaced with the creator's name and the share URL.",
   "admin.config.email.reset-password-subject": "Reset password subject",
   "admin.config.email.reset-password-subject.description":
     "Subject of the email which gets sent when a user requests a password reset.",
@@ -628,12 +628,12 @@ export default {
   "common.button.share": "Share",
   "common.button.generate": "Generate",
   "common.button.done": "Done",
-  "common.text.link": "Link",
-  "common.text.navigate-to-link": "Go to the link",
+  "common.text.link": "Kumolink",
+  "common.text.navigate-to-link": "Go to the kumolink",
   "common.text.or": "or",
   "common.button.go-back": "Go back",
   "common.button.go-home": "Go home",
-  "common.notify.copied": "Your link was copied to the clipboard",
+  "common.notify.copied": "Your kumolink was copied to the clipboard",
   "common.success": "Success",
 
   "common.error": "Error",
